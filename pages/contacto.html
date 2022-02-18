@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portfolio</title>
+    <link rel="icon" type="image/png" href="../img/heart.png">
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+
+  <body>
+
+    <header class="header">
+
+      <a class="header__logoBackground" href="../index.html">
+        <img class="header__logo" src="../img/logo.svg" alt="Logo de la pagina">
+        <img class="header__logoResponsive" src="../img/logo_responsive.svg" alt="Logo de la pagina">
+      </a>
+
+      <nav class="nav">
+  
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="../index.html">Inicio</a>
+          </li>
+  
+          <li class="nav__item">
+            <a class="nav__link" href="formacion.html">Formación</a>
+          </li>
+  
+          <li class="nav__item">
+            <a class="nav__link" href="trabajos.html">Trabajos</a>
+          </li>
+  
+          <li class="nav__item">
+            <a class="nav__link" href="sobre_mi.html">Sobre mí</a>
+          </li>
+  
+          <li class="nav__item">
+            <a class="nav__link nav__link--active" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+  
+    </header>
+
+
+    <main class="mainContacto">
+
+      <div class="mainContacto__text">
+        
+        <h1 class="mainContacto__title">¡Contactate!</h1>
+        <p class="mainContacto__paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id
+          nulla nec velit scelerisque scelerisque.
+        </p>
+
+      </div>
+      
+      <form class="mainContacto__form" action=""> 
+
+        <label class="mainContacto__label" for="nombre">Nombre</label>
+        <input class="mainContacto__input" name="nombre" type="text"> 
+
+        <label class="mainContacto__label" for="email">Email</label>
+        <input class="mainContacto__input" type="email" name="email" placeholder="usuario@gmail.com" required>
+
+        <label class="mainContacto__label" for="mensaje">Mensaje</label>
+        <textarea class="mainContacto__textFill" name="mensaje" id="" cols="30" rows="5"></textarea>
+
+        <input class="mainContacto__button" type="submit" value="Enviar">
+
+      </form>
+
+    </main>
+
+
+    <footer class="footer__content">
+
+      <p class="footer__text">Links a otras plataformas</p>
+      <a class="footer__link" href="https://www.linkedin.com" target="_blank">Linkedin</a>
+      <a class="footer__link" href="https://www.behance.net" target="_blank">Behance</a>
+      
+    </footer>
+
+
+  </body>
+</html>
