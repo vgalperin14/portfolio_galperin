@@ -1,79 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portfolio</title>
     <link rel="icon" type="image/png" href="img/heart.png">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/styles.css" />
 
-<body class="gridArea">
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
 
-  <header class="headerGrid">
+  <body class="bodyIndex">
+
+    <header class="header">
+      
+      <a href="index.html">
+        <img class="header__logo" src="img/logo.svg" alt="Logo de la pagina">
+        <img class="header__logoResponsive" src="img/logo_responsive.svg" alt="Logo de la pagina">
+      </a>
+
+      <nav class="nav">
+
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link nav__link--active" href="index.html">Inicio</a>
+          </li>
     
-    <a href="index.html">
-      <img class="headerGrid__logo" src="img/logo.svg" alt="Logo de la pagina">
-      <img class="headerGrid__logoResponsive" src="img/logo_responsive.svg" alt="Logo de la pagina">
-    </a>
-
-  </header>
-
-  <nav class="navGrid">
-
-    <ul class="navGrid__links">
-      <li class="navGrid__item">
-        <a class="navGrid__link nav__link--active" href="index.html">Inicio</a>
-      </li>
-
-      <li class="navGrid__item">
-        <a class="navGrid__link" href="pages/formacion.html">Formación</a>
-      </li>
-
-      <li class="navGrid__item">
-        <a class="navGrid__link" href="pages/trabajos.html">Trabajos</a>
-      </li>
-
-      <li class="navGrid__item">
-        <a class="navGrid__link" href="pages/sobre_mi.html">Sobre mí</a>
-      </li>
-
-      <li class="navGrid__item">
-        <a class="navGrid__link" href="pages/contacto.html">Contacto</a>
-      </li>
-    </ul>
-
-  </nav>
+          <li class="nav__item">
+            <a class="nav__link" href="pages/formacion.html">Formación</a>
+          </li>
     
-  <main class="mainGridIndex">
-
-    <div class="mainGridIndex__titles">
-      <h1 class="mainGridIndex__title">Valentina Galperin</h1>
-      <h2 class="mainGridIndex__subtitle">Diseño Gráfico</h2>
-    </div>
-
-    <div class="mainGridIndex__slide">
-      <img class="mainGridIndex__image" src="img/trabajo_1.jpg" alt="Infografía interactiva">
-    </div>
-
-    <div class="mainGridIndex__info">
-      <p class="mainGridIndex__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id
-        nulla nec velit scelerisque scelerisque. Suspendisse gravida purus eu
-        nulla varius dignissim blandit ac augue. Etiam vitae vehicula risus.
-        Praesent eget vestibulum dui.
-      </p>
-    </div>
-
-  </main>
-
-  <footer class="footerGrid__content">
-
-    <p class="footerGrid__text">Links a otras plataformas</p>
-    <a class="footerGrid__link" href="https://www.linkedin.com" target="_blank">Linkedin</a>
-    <a class="footerGrid__link" href="https://www.behance.net" target="_blank">Behance</a>
-
-  </footer>
+          <li class="nav__item">
+            <a class="nav__link" href="pages/trabajos.html">Trabajos</a>
+          </li>
     
-</body>
+          <li class="nav__item">
+            <a class="nav__link" href="pages/sobre_mi.html">Sobre mí</a>
+          </li>
+    
+          <li class="nav__item">
+            <a class="nav__link" href="pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+    
+      </nav>
+
+    </header>
+
+
+      
+    <main class="mainIndex">
+
+      <div class="mainIndex__titles">
+        <h1 class="mainIndex__title">Valentina Galperin</h1>
+        <h2 class="mainIndex__subtitle">Diseño Gráfico</h2>
+      </div>
+
+      <div class="mainIndex__slide">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="mainIndex__image" src="img/trabajo_1.jpg" alt="First slide">
+            </div>
+
+            <div class="carousel-item">
+              <img class="mainIndex__image" src="img/trabajo_2.jpg" alt="Second slide">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
+            </div>
+          </div>
+        </div>
+
+        <div class="mainIndex__rectangle"></div>
+      </div>
+
+      <div class="mainIndex__info">
+        <p class="mainIndex__paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
+        </p>
+      </div>
+
+    </main>
+
+    <footer class="footer__content">
+
+      <p class="footer__text">Links a otras plataformas</p>
+      <a class="footer__link" href="https://www.linkedin.com" target="_blank">Linkedin</a>
+      <a class="footer__link" href="https://www.behance.net" target="_blank">Behance</a>
+
+    </footer>
+      
+  </body>
 </html>
