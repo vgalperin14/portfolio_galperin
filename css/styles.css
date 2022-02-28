@@ -9,58 +9,41 @@
     box-sizing: border-box;
 }
 
-
-/*HEADER*/
-
-.header {
-    display: flex;
-    align-items: center;
-    background-color: #cad2c586;
-    position: sticky;
-    top: 0;
+body{
+    font-family: 'Montserrat', sans-serif;
 }
 
-.nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    width: 90vw;
-    padding: 2rem;
+
+/*HEADER*/
+/*NAV*/
+
+.navbar{
+    background-color: #cad2c562;
+}
+
+.navbar-nav{
+    font-weight: 700;
 }
 
 .header__logo {
-    display: flex;
-    justify-content: center;
-    margin: 2rem;
+    height: 2vh;
+    width: auto;
+    margin: 0 0 0 0;
 }
 
-.header__logoResponsive {
-    display: none;
+.navbar-brand:hover{
+transition: all 0.2s;
+transform: scale(1.05);
 }
 
-.nav__links {
-    list-style: none;
-    white-space: nowrap;
-    display: flex;
-    flex-direction: row; 
-    justify-content: flex-end;
-}
-
-.nav__link {
-    text-decoration: none;
-    color: white;
-    margin-left: 2rem;
-}
-
-.nav__link--active {
-    font-weight: 600;
-    border-bottom: 2px solid white
+form .btn:hover{
+    transition: all 0.5s;
+    background-color: #480892;
+    border: solid 1px #722cc2;
 }
 
 
 /*MAIN*/
-
 /*index*/
 
 .bodyIndex {
@@ -70,127 +53,61 @@
     background-size: cover;
 }
 
-.header {
-    background: #cad2c586;
-    position: sticky;
-    top: 0;
-}
-
-.header__logo {
-    margin: 2rem 2rem ;
-}
-
-.header__logoResponsive {
-    display: none;
-}
-
-.nav {
-    display: flex;
-    justify-content: end;
-    position: sticky;
-    top: 0;
-}
-
-.nav__links {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin-right: 2rem;
-}
-
-.nav__link {
-    text-decoration: none;
-    white-space: nowrap;
-    margin-left: 2rem;
-    color: white;
-}
-
-.nav__link--active {
-    font-weight: 600;
-    border-bottom: 2px solid white
-}
-
-
 .mainIndex__titles {
     text-align: center;
     color: aliceblue;
-    margin: 14vh 0 0 7vw;
+    margin: 10rem 0 0 7vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    position: relative;
+    z-index: 1;
 }
 
 .mainIndex__title {
-    font-family: 'Noto Serif Display', serif;
-    font-size: 7rem;
+    font-size: 7vw;
     font-weight: 600;
 }
 
 .mainIndex__subtitle {
-    font-family: 'Noto Serif Display', serif;
-    font-size: 6.6rem;
+    font-size: 7vw;
     font-weight: 300;
 }
 
-.mainIndex__slide {
-    position: relative;
-    bottom: 3.5rem;
-    z-index: -1;
+.mainIndex__slides{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .mainIndex__image {
-    display: flex;
     height: auto;
-    margin-left: 26vw;
-    width: 45%;
+    width: 70%;
 }
 
-.mainIndex__rectangle {
-    position: absolute;
-    z-index: -1;
-    left: 19vw;
-    top: 11vh;
-    height: 30rem;
-    width: 50rem;
-    background: #cad2c549;
-}  
-
 .mainIndex__info {
-    position: relative;
-    margin-left: 74vw;
-    bottom: 19rem;
-    width: 20vw;
+    width: 30vw;
+    margin: 3vw 0 0 62vw;
 }
 
 .mainIndex__paragraph {
-    font-size: 1.8rem;
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.5rem;
     font-weight: 600;
-    color: #3F0AA5;
+    color: #360a88;
     hyphens: auto;
     padding-bottom: 1.8rem;
-    border-bottom: solid 16px #3F0AA5;
+    border-bottom: solid 0.8vh #360a88;
 }
-
-.footer__content {
-    text-align: center;
-    margin-top: 4rem;
-    padding: 2.7rem 0 6rem 0;
-    color: white;
-    background-color: #16082c;
-}
-
-.footer__link {
-    display: inline-block;
-    margin-top: 15px;
-    text-decoration: none;
-    font-weight: 100;
-    color: white;
-}
-
 
 
 /*formacion*/
+
+.bodyFormacion{
+    background-image: url("../img/gradient.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .mainFormacion {
     display: flex;
@@ -223,7 +140,6 @@
     margin-top: 1rem;
 }
 
-
 .mainFormacion__title {
     font-size: 4vw;
     font-weight: 600;
@@ -239,7 +155,7 @@
 }
 
 .mainFormacion__timeline {
-    margin: 12vh 0 7rem 0;
+    margin: 12vh 0 0 0;
     width: 78vw;
     height: auto;
 }
@@ -250,6 +166,12 @@
 
 
 /*trabajos*/
+
+.bodyTrabajos {
+    background-image: url("../img/gradient.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .mainTrabajos__title {
     display: flex;
@@ -269,6 +191,7 @@
     color: aliceblue;
     margin-bottom: 5rem;
 }
+
 
 /*trabajos grid*/
 
@@ -292,6 +215,12 @@
     object-fit: cover;
 }
 
+.grid img:hover{
+    transition: all 1.5s;
+    transform: scale(1.3);
+    box-shadow: 0 3px 10px #16082c;
+}
+
 .grid__title {
     margin-top: 0.7rem;
     font-size: 1rem;
@@ -308,6 +237,12 @@
 
 
 /*sobre mi*/
+
+.bodySobreMi {
+    background-image: url("../img/gradient.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .mainSobreMi {
     display: flex;
@@ -338,8 +273,20 @@
     color: white;
 }
 
+.mainSobreMi__paragraph--highlight:hover {
+    transition: all 0.5s;
+    transform: scale(1.1);
+    color: #360a88;
+}
+
 
 /*contacto*/
+
+.bodyContacto{
+    background-image: url("../img/gradient2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .mainContacto {
     display: flex;
@@ -405,26 +352,37 @@
 }
 
 
-
 /*FOOTER*/
 
 .footer__content {
-    width: 100vw;
-    margin-top: 5rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 25vh 5vw 4vh 5vw;
     padding: 3.2rem 0 7rem 0;
     text-align: center;
     font-size: 1.4vw;
     color: white;
-    background-color: #16082c;
+    border-top: solid 2px white;
 }
 
-.footer__link {
-    display: inline-block;
-    margin-top: 1rem;
-    text-decoration: none;
-    font-weight: 100;
-    color: white;
+.footer__name{
+    display: flex;
+    font-size: 1.5vh;
 }
+
+.footer__links{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__logo{
+    height: 3.5vh;
+    width: auto;
+    margin-left: 1vw;
+}
+
+
 
 
 
@@ -433,6 +391,13 @@
 /*DESKTOP*/
 
 @media screen and (max-width: 1200px){
+
+    /*index*/
+
+    .mainIndex__paragraph{
+        font-size: 1.3rem;
+    }
+
 
     /*trabajos*/
 
@@ -465,56 +430,14 @@
 
 @media screen and (max-width: 768px){
 
-    /*index body grid layout*/
+    /*index*/
 
-    .headerGrid__logo {
-        display: none;
+    .mainIndex__titles{
+        margin-top: 12vh;
     }
 
-    .headerGrid__logoResponsive {
-        grid-area: logo;
-        display: flex;
-        margin: 2rem ;
-        width: 2.8rem;
-        height: auto;
-    }
-
-    .mainGridIndex__title {
-        font-size: 2.8rem;
-    }
-
-    .mainGridIndex__subtitle {
-        font-size: 2rem;
-        margin-bottom: 2.5rem;
-    }
-
-    .mainGridIndex__info {
-        margin-right: 7.5rem;
-        margin-left: 7.5rem;
-    }
-    
-    .mainGridIndex__paragraph {
-        font-size: 1rem;
-    }
-
-
-    /*header*/
-
-    .header__logo {
-        display: none;
-    }
-
-    .header__logoResponsive {
-        grid-area: logo;
-        display: flex;
-        margin: 2rem ;
-        width: 2.8rem;
-        height: auto;
-    }
-
-    .nav__links {
-        flex-wrap: wrap;
-        padding-left: 0;
+    .mainIndex__paragraph{
+        font-size: 0.9rem;
     }
 
 
@@ -603,13 +526,6 @@
         font-size: 1.2rem;
     }
 
-    .mainContacto__button {
-        font-size: 3.5vw;
-        height: 6vh;
-        width: 25vw;
-    }
-
-
     /*footer*/
 
     .footer__content {
@@ -622,69 +538,30 @@
 
 /*MOBILE*/
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 480px){
 
-    /*body grid layout index*/
 
-    .headerGrid__logoResponsive {
-        margin: 2.8rem 2rem 0 2rem
+    /*index*/
+
+    .mainIndex__title{
+        margin-bottom: 0;
+        font-size: 8.6vw;
     }
 
-    .navGrid {
-        padding: 1rem 2rem 1rem 2rem;
+    .mainIndex__subtitle{
+        margin-bottom: 0;
+        font-size: 8.4vw;
     }
 
-    .navGrid__links {
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        margin: 0;
+    .mainIndex__info{
+        margin-left: 50vw;
     }
-    
-    .navGrid__link { 
+
+    .mainIndex__paragraph{
+        width: 45vw;
         font-size: 0.7rem;
-    }
-
-    .mainGridIndex__title {
-        font-size: 2.2rem;
-    }
-    
-    .mainGridIndex__subtitle {
-        font-size: 1.5rem;
-        margin-bottom: 2rem;
-    }
-
-    .mainGridIndex__info {
-        margin: 4rem 3rem 0 3rem;
-    }
-
-    .mainGridIndex__paragraph {
-        font-size: 0.8rem;
-    }
-
-    .footerGrid__content {
-        padding-top: 2rem;
-        padding-bottom: 8rem;
-        font-size: 3vw;
-    }
-
-    .footerGrid__link {
-        margin-top: 0.5rem;
-    }
-
-    
-
-    /*header*/
-
-    .header__logoResponsive {
-        margin: 1.8rem;
-    }
-
-    .nav {
-        padding: 1rem 2rem 1rem 2rem;
-    }
-
-    .nav__link {
-        font-size: 0.7rem;
+        margin-top: 2.5vh;
+        padding-bottom: 1em;
     }
 
 
@@ -797,14 +674,6 @@
     .mainContacto__label {
         font-size: 4.2vw;
         margin-bottom: 1vh;
-    }
-
-    .mainContacto__button {
-        height: 5vh;
-        width: 30vw;
-        border: 5px ridge rgb(66, 14, 163);
-        border-radius: 7px;
-        font-size: 4.5vw;
     }
   
 
